@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Free Tokens</title>
+
+    <script src="plugins/jquery-2.1.1.min.js"></script>
+
+    <!-- bootstrap for better look example, but not necessary -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" type="text/css" media="screen, projection">
+
+    <!-- Step Form Wizard plugin -->
+    <link rel="stylesheet" href="step-form-wizard/css/step-form-wizard.css" type="text/css" media="screen, projection">
+    <script src="step-form-wizard/js/step-form-wizard.js"></script>
+
+    <!-- nicer scroll in steps -->
+    <link rel="stylesheet" href="plugins/mcustom-scrollbar/jquery.mCustomScrollbar.css">
+    <script src="plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script>
+        var sfw;
+        $(document).ready(function() {
+            sfw = $("#wizard_example").stepFormWizard({
+                showNav: 'left',
+                height: '600px',
+                theme: 'circle'
+            });
+        })
+        $(window).load(function(){
+            /* only if you want use mcustom scrollbar */
+            $(".sf-wizard fieldset").mCustomScrollbar({
+                theme:"dark-3",
+                scrollButtons:{
+                    enable:true
+                }
+            });
+            /* ***************************************/
+
+            /* this function call can help with broken layout after loaded images or fonts */
+            sfw.refresh();
+        });
+    </script>
+
+    <style>
+        pre {margin: 45px 0 60px;}
+        h2 {margin: 60px 0 30px 0;}
+        p {margin-bottom: 10px;}
+    </style>
+    
+    
+</head>
+<body>
+
+<div class="container">
+<div class="site-index">
+<div class="body-content">
+
+        <nav class="navbar navbar-inverse" role="navigation">
+        <ul class="nav navbar-nav">
+        <li><a href="zCrowdsale.htm">Crowdsale</a></li>
+        <li><a href="zFreetokens.htm">Get free tokens</a></li>
+        <li><a href="zTokenHolderList.htm">token Holder List</a></li>
+        <li><a href="zSummary.htm">Participation summary</a></li>
+        </ul>
+
+    </nav>
+
+    
+<div class="row">
+    <div class="col-md-12">
+        <h2>Free token process</h2>
+        <form id="wizard_example" action="">
+            
+            
+            <fieldset>
+                <legend>Refer donors to get free tokens</legend>
+                
+                <label>Rules:</label><br>
+	Refer 3 people => get 5,000 coins<br>
+	Refer 5 people => get 15,000 coins<br>
+	Refer 10 people => get 50,000 coins<br><br>
+
+<p>
+-Each person referred must acquire at least 0.5 bitcoin value or 2500 tokens to get credit for each person referred<br>
+-Referees get 2500 extra tokens if they use your url to purchase and purchase at least 0.5 btc worth of tokens<br>
+-All or nothing for the tier rewards: for example you don't get credit for referring 2 people..you must refer 3 to get 5,000 tokens<br>
+-No spamming…post relevant replies then engage with your offer<br>
+-First come first serve : maximum people referable by one person is 10<br>
+-If tokens are not completely claimed, The rest go as bonus to top 10% earliest donors , developers, board members and workers shared equally<br>
+</p><br><br>
+
+
+<p>if an individual manages to refer 10 participating  individuals… they own 0.05% of 100 million total tokens</p><br>
+                <a href="">learn more</a>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" value="option1" checked>
+                        I agree, continue.
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" value="option2">
+                        I disagree, get me out of here.
+                    </label>
+                </div>
+            </fieldset>
+            
+            
+            
+  
+            
+            
+            <fieldset>
+                <legend>Final step</legend>
+                <div class="row">
+                    
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputName1">Your name</label>
+                                    <input type="text" class="form-control" id="exampleTokenAddress" name="exampleTokenAddress" placeholder="Nxt token receipt address">
+                                </div>
+                               
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputHam1"></label>
+                                    <input type="text" class="form-control" id="exampleuniqueURL" name="exampleuniqueURL" placeholder="Put in unique name for your unique url">
+                                </div>
+                            </div>
+                            <div class="col-lg-6"><br>
+                            Generate random string append to unique name to generate unique url<br><br><br>
+
+                        display unique url<br><br>
+
+Message :<br>
+	share unique url with your friends and whales to get free coins<br><br>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            
+                            <div class="col-lg-6">
+                                
+                                <div>
+                                    <label>
+                             
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <p>
+                          <label>Rules:</label>  <br>
+Each person referred must acquire at least 0.5 bitcoin value or 2500 tokens to get credit for each person referred<br>
+Referees get extra coins if they use your url to purchase and purchase at least 0.5 btc worth of tokens<br>
+All or nothing for the tier rewards: for example you don't get credit for referring 2 people..you must refer 3 to get 5000 tokens<br>
+No spamming…post relevant replies then engage with your offer…If you are reported for spamming your account will be disqualified<br>
+First come first serve : maximum people referable by one person is 45<br>
+If tokens are not completely claimed, They Rest go as bonus to top 10% earliest donors , board members and workers shared equally<br>
+                        </p>
+                        
+                    </div>
+                    <noscript>
+                        <input class="nocsript-finish-btn sf-right nocsript-sf-btn" type="submit" name="no-js-clicked" value="finish"/>
+                    </noscript>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+  <!--  <div class="row">
+        <div class="col-md-12 up-20">
+                <pre><code>$(window).load(function(){
+    $("#wizard_example").skyFormWizard({
+        showNav: 'left',
+        height: '300px',
+        theme: 'circle'
+    })
+});
+                </code></pre>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left"> 2015</p>
+    </div>
+</footer>
+</div>
+</div>
+</div>
+    
+    
+</body>
+</html>

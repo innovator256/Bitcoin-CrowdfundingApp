@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Token Holder List</title>
+
+    <script src="plugins/jquery-2.1.1.min.js"></script>
+
+    <!-- bootstrap for better look example, but not necessary -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" type="text/css" media="screen, projection">
+
+    <!-- Step Form Wizard plugin -->
+    <link rel="stylesheet" href="step-form-wizard/css/step-form-wizard.css" type="text/css" media="screen, projection">
+    <script src="step-form-wizard/js/step-form-wizard.js"></script>
+
+    <!-- nicer scroll in steps -->
+    <link rel="stylesheet" href="plugins/mcustom-scrollbar/jquery.mCustomScrollbar.css">
+    <script src="plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script>
+        var sfw;
+        $(document).ready(function () {
+            sfw = $("#wizard_example").stepFormWizard({});
+        })
+        $(window).load(function () {
+            /* only if you want use mcustom scrollbar */
+            $(".sf-wizard fieldset").mCustomScrollbar({
+                theme: "dark-3",
+                scrollButtons: {
+                    enable: true
+                }
+            });
+            /* ***************************************/
+
+            /* this function call can help with broken layout after loaded images or fonts */
+            sfw.refresh();
+        });
+    </script>
+
+    <style>
+        pre {margin: 45px 0 60px;}
+        h2 {margin: 60px 0 30px 0;}
+        p {margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="site-index">
+        <div class="body-content">
+
+            
+                
+    <nav class="navbar navbar-inverse" role="navigation">
+        <ul class="nav navbar-nav">
+        <li><a href="zCrowdsale.htm">Crowdsale</a></li>
+        <li><a href="zFreetokens.htm">Get free tokens</a></li>
+        <li><a href="zTokenHolderList.htm">token Holder List</a></li>
+        <li><a href="zSummary.htm">Participation summary</a></li>
+        </ul>
+
+    </nav>
+
+            
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Token Holder list Sample</h2>
+                    
+                    
+                    
+                    <table class="table table-condensed table table-hover">
+        <thead>
+            <tr>
+                <th>Donnors (D) / referers(R)</th>
+                <th>Donation / People refered</th>
+                <th>Token Amounts</th>
+                <th>Total Token Left</th>
+                <th>Agreed to Terms</th>
+                <th>TransID verified</th>
+                <th>Summary verified</th>
+                <th>Refered By</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1ACET5UaFd4bLoso1SBK4WmDk6mZBfNqse (D)</td>
+                <td>50 btc</td>
+                <td>1,500,000</td>
+                <td>53,500,000</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>http://url.com/jordanho1SBK4WmDk6mZng</td>
+            </tr>
+            <tr>
+                <td>http://url.com/jordanho1SBK4WmDk6mZng (R)</td>
+                <td>10 people</td>
+                <td>50,000</td>
+                <td>53,400,000</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Self</td>
+            </tr>
+            <tr>
+                <td>NXT-CUXB-ZEKL-CC9Z-AZB6J (D)</td>
+                <td>200,000 nxt</td>
+                <td>2,000</td>
+                <td>53,398,000</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>http://url.com/jordanho1SBK4WmDk6mZng</td>
+            </tr>
+        </tbody>
+    </table>
+
+                    
+                </div>
+            </div>
+            
+            
+
+        
+        
+        
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        
+
+            <footer class="footer">
+                <div class="container">
+                    <p class="pull-left"> 2015</p>
+                </div>
+            </footer>
+        
+        
+        </div>
+    </div>
+</div>
+</body>
+</html>

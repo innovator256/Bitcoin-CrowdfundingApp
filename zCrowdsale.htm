@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crowdsale</title>
+
+    <script src="plugins/jquery-2.1.1.min.js"></script>
+
+    <!-- bootstrap for better look example, but not necessary -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" type="text/css" media="screen, projection">
+
+    <!-- Step Form Wizard plugin -->
+    <link rel="stylesheet" href="step-form-wizard/css/step-form-wizard.css" type="text/css" media="screen, projection">
+    <script src="step-form-wizard/js/step-form-wizard.js"></script>
+
+    <!-- nicer scroll in steps -->
+    <link rel="stylesheet" href="plugins/mcustom-scrollbar/jquery.mCustomScrollbar.css">
+    <script src="plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script>
+        var sfw;
+        $(document).ready(function() {
+            sfw = $("#wizard_example").stepFormWizard({
+                showNav: 'left',
+                height: '500px',
+                theme: 'circle'
+            });
+        })
+        $(window).load(function(){
+            /* only if you want use mcustom scrollbar */
+            $(".sf-wizard fieldset").mCustomScrollbar({
+                theme:"dark-3",
+                scrollButtons:{
+                    enable:true
+                }
+            });
+            /* ***************************************/
+
+            /* this function call can help with broken layout after loaded images or fonts */
+            sfw.refresh();
+            $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+        });
+    </script>
+
+    <style>
+        pre {margin: 45px 0 60px;}
+        h2 {margin: 60px 0 30px 0;}
+        p {margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+
+<div class="container">
+<div class="site-index">
+<div class="body-content">
+
+        <nav class="navbar navbar-inverse" role="navigation">
+        <ul class="nav navbar-nav">
+        <li><a href="zCrowdsale.htm">Crowdsale</a></li>
+        <li><a href="zFreetokens.htm">Get free tokens</a></li>
+        <li><a href="zTokenHolderList.htm">token Holder List</a></li>
+        <li><a href="zSummary.htm">Participation summary</a></li>
+        </ul>
+
+        </nav>
+
+    
+<div class="row">
+    <div class="col-md-12">
+        <h2>Crowdsale</h2>
+        <form id="wizard_example" action="">
+            
+            
+            <fieldset>
+                <legend>Crowdsale terms at a glance (sample)</legend>
+                All Participator are considered donors<br>
+                All donors will recieve tokens as appreciation for donations<br>
+                Acceptable donations are either Bitcoin or Nxt<br>
+                No refunds will be made to donators / purchasers of Pokereum tokens<br>
+                The Function of the tokens may be changed in the future by majority of the token holders<br>
+                Make sure you send from an address that you fully control ( so shares wallets and please do not send coins from an exchange.) <br>
+                Make sure you know how to attach a message to a transaction<br>
+                <a href="">learn more</a> 
+                ( the above text are samples, the details will be determined : filled out later )<br><br><br>
+                
+                
+                
+                <label> Valuation info :</label><br>
+                <a href="">learn more</a><br><br><br>
+                
+                
+                
+                <div row>
+                <label> Extra token award :</label><br>
+                get 2500 extra tokens when you provide the url of your referer and as long as you purchase more than 0.5btc worth of tokens or 2500 tokens.</div><br>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" value="option1" checked>
+                        I agree, continue.
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" value="option2">
+                        I disagree, get me out of here.
+                    </label>
+                </div>
+            </fieldset>
+            
+            
+            
+            
+            
+            
+            <fieldset>
+                <legend>Basic information</legend>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Referal Url</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" placeholder="Enter the url of your referer, get extra tokens" >
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Your donor address</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="exampleInputPassword1" placeholder="Btc or nxt address you'd be sending from">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Nxt token receipt Address</label>
+                            <input type="password" class="form-control" id="exampleInputPasswordAgain1" name="exampleInputPasswordAgain1" placeholder="Nxt Address where your tokens should be sent">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contribution type</label>
+                            <select class="form-control" name="favoriteNumber">
+                                <option value="1">Bitcoin</option>
+                                <option value="2">NXT</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Number of tokens left </label>
+                            
+                           <input type="text" class="form-control" id="exampleInputPasswordAgain1" name="TokensLeft" value="55,000,000" readonly><br>
+                            
+                            <label>Amount of tokens desired</label>
+                            
+                            <input type="password" class="form-control" id="exampleInputPasswordAgain1" name="exampleInputPasswordAgain1" placeholder="Enter the number of tokens that you would like"><br>
+                                                        
+                            <label for="exampleInputPassword1">BTC or NXT donation</label>
+                            <input type="password" class="form-control" id="exampleInputPasswordAgain1" name="exampleInputPasswordAgain1" placeholder="the cost of tokens in BTC or NXT">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        
+                        get 2500 extra tokens as long as you purchase more than 0.5btc worth of tokens or 2500 tokens. 
+                        <br>
+                        <br>
+                        <div>
+                        <label>Your Participation Summary</label><br><br>
+                        " ->Btc or nxt address you are sending from :<br>
+                        ->Nxt token Receipt address : <br>
+	                    ->Amount of token gained :<br>
+	                    ->extra tokens gained from referer : " <br><br>
+                        
+                        
+	                           Yo will have 30 mins to complete this transactions in the next stage <br>
+                        Make sure you use the participation summary as a message to the Nxt or BTC transaction in the next page.</div>
+
+						
+                    </div>
+                </div>
+            </fieldset>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <fieldset>
+                <legend>Final step</legend>
+                <div class="row">
+                    
+                    
+                    <div class="col-lg-12">
+                        <p>
+                          30 mins countdown timer <br>
+
+                            Do not close this page <br>
+                            you will have 30 mins to complete this transaction<br>
+                            only click finish once you have sent your coins to the address below<br><br>
+
+                            
+                             <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="option1" checked>
+                                        if btc&mdash;display btc address for donation
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" value="option2">
+                                        if nxt&mdash; display nxt addressfor donation
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div><br><br><br>
+                        
+                           
+
+                            <div class="span4"></div> transaction ID input box (paste in transaction ID)<br>
+
+                            click confirm and finish<br>
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="sr-only" for="exampleInputName1">Transaction id </label>
+                                    <input type="text" class="form-control" id="exampleInputName1" name="exampleInputName1" placeholder="transaction ID input box (paste in transaction ID)">
+                                </div>
+                                <div class="form-group">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                
+                
+                
+                
+                
+                    <div class="col-lg-12">
+                        <p>
+                          <label>Your Participation Summary</label><br><br>
+                        ->Btc or nxt address you are sending from :<br>
+	                    ->Amount of token gained :<br>
+	                    ->extra tokens gained from referer : <br>
+	                    ->Yo will have 30 mins to complete this transactions in the next stage <br>
+                        </p>
+                       
+                    </div>
+                    <noscript>
+                        <input class="nocsript-finish-btn sf-right nocsript-sf-btn" type="submit" name="no-js-clicked" value="finish"/>
+                    </noscript>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+  <!--  <div class="row">
+        <div class="col-md-12 up-20">
+                <pre><code>$(window).load(function(){
+    $("#wizard_example").skyFormWizard({
+        showNav: 'left',
+        height: '300px',
+        theme: 'circle'
+    })
+});
+                </code></pre>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left"> 2015</p>
+    </div>
+</footer>
+</div>
+</div>
+</div>
+</body>
+</html>

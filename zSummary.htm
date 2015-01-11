@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Token Holder List</title>
+
+    <script src="plugins/jquery-2.1.1.min.js"></script>
+
+    <!-- bootstrap for better look example, but not necessary -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" type="text/css" media="screen, projection">
+
+    <!-- Step Form Wizard plugin -->
+    <link rel="stylesheet" href="step-form-wizard/css/step-form-wizard.css" type="text/css" media="screen, projection">
+    <script src="step-form-wizard/js/step-form-wizard.js"></script>
+
+    <!-- nicer scroll in steps -->
+    <link rel="stylesheet" href="plugins/mcustom-scrollbar/jquery.mCustomScrollbar.css">
+    <script src="plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script>
+        var sfw;
+        $(document).ready(function () {
+            sfw = $("#wizard_example").stepFormWizard({});
+        })
+        $(window).load(function () {
+            /* only if you want use mcustom scrollbar */
+            $(".sf-wizard fieldset").mCustomScrollbar({
+                theme: "dark-3",
+                scrollButtons: {
+                    enable: true
+                }
+            });
+            /* ***************************************/
+
+            /* this function call can help with broken layout after loaded images or fonts */
+            sfw.refresh();
+        });
+    </script>
+
+    <style>
+        pre {margin: 45px 0 60px;}
+        h2 {margin: 60px 0 30px 0;}
+        p {margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="site-index">
+        <div class="body-content">
+
+            
+                
+    <nav class="navbar navbar-inverse" role="navigation">
+        <ul class="nav navbar-nav">
+        <li><a href="zCrowdsale.htm">Crowdsale</a></li>
+        <li><a href="zFreetokens.htm">Get free tokens</a></li>
+        <li><a href="zTokenHolderList.htm">token Holder List</a></li>
+        <li><a href="zSummary.htm">Participation summary</a></li>
+        </ul>
+
+    </nav>
+
+            
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Summary for 1ACET5UaFd4bLoso1SBK4WmDk6mZBfNqse (D)</h2>
+                    
+                    
+                    
+                <ul>
+                <li>Donnors (D) : 1ACET5UaFd4bLoso1SBK4WmDk6mZBfNqse (D)</li>
+                <li>Donation : 50 btc</li>
+                <li>Token Amounts : 1,500,000</li>
+               
+                <li>Agreed to Terms : Yes</li>
+                <li>TransID verified : Yes</li>
+                <li>Summary verified : Yes</li>
+                <li>Refered By : http://url.com/jordanho1SBK4WmDk6mZng</li>
+            </ul> 
+
+                    
+                </div>
+            </div>
+            
+            
+
+        
+        
+        
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        
+
+            <footer class="footer">
+                <div class="container">
+                    <p class="pull-left"> 2015</p>
+                </div>
+            </footer>
+        
+        
+        </div>
+    </div>
+</div>
+</body>
+</html>
